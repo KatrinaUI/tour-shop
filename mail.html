@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Лечебный отдых / вариант 1</title>
+	</head>
+	<body>
+		<style>
+			body{
+		    	font-family: 'Arial';
+				padding: 0;
+				margin: 0;
+				color: #494746;
+				font-weight: 400;
+			}
+
+			h1{
+				margin: 36px 0 0;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 32px;
+				color: #2886DD;
+				text-transform: uppercase;
+			}
+
+			.header{
+				background: #F3F3F3;
+			}
+
+			.header img{
+				display: block;
+			}
+
+			.header__col{
+				padding: 16px 20px;
+			}
+
+			.header__col p{
+				margin: 0;
+			}
+
+			.header__col img{
+				margin-left: 6px;
+			}
+
+			.client{
+				font-size: 12px;
+				line-height: 13px;
+			}
+
+			.bill{
+				font-weight: 600;
+				font-size: 10px;
+				line-height: 12px;
+			}
+
+			.bill span{
+				color: #F87F3D;
+			}
+
+			.bill small{
+				font-family: system-ui;
+			}
+
+			.account-link{
+				color: #494746;
+				text-decoration: none;
+				font-size: 12px;
+				line-height: 13px;
+				display: block;
+				margin-top: 7px;
+			}
+
+			.sub-title{
+				padding-top: 2px;
+				font-size: 12px;
+				line-height: 19px;
+			}
+
+			.subheader__list{    
+				display: flex;
+			    padding: 0;
+				margin: 36px 0 24px;
+			    list-style: none;
+			    justify-content: center;
+			    gap: 16px;
+			    font-size: 12px; 
+			    font-weight: 600;
+				line-height: 19px;
+				text-transform: uppercase;
+			}
+
+			.subheader__list img{    
+				margin-top: 7px;
+    			position: absolute;
+			}
+
+			/* offers */
+
+			.offer>td{
+				padding: 0px 24px 24px;
+			}
+
+			.offer__img img{
+				margin-bottom: 16px;
+			}
+
+			.offer__title, 
+			.offer__text{
+				padding-bottom: 8px;
+			}
+
+			.offer__title a{
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 21px;
+				color: #494746;
+				text-decoration: none;
+			} 
+
+			.offer__text{
+				font-size: 13px;
+				line-height: 17px;
+			}
+
+			.offer__text p{
+				max-width: 407px;
+				margin: 0;
+			}
+
+			.supfooter{
+				background: #F9F9F9;
+			}
+
+			.supfooter>td{
+				padding: 24px 20px;
+			}
+
+			.subfooter__information{
+				padding: 24px 0 0;
+			    line-height: 17px;
+			    font-size: 12px;
+			}
+
+			.footer{
+				background: #F3F3F3;
+			}
+
+			.footer__col{
+				padding: 16px 20px;
+			}
+
+			.social-list{ 
+				display: flex;
+			    padding: 0;
+			    list-style: none;
+			    justify-content: center;
+			    gap: 14px;
+			}
+
+			.social-list a{
+				display: block;
+				max-height: 26px;
+			}
+
+			.footer__links a{
+				font-size: 12px;
+				line-height: 14px;
+				color: #2886DD;
+			}
+
+			.footer__list{ 
+				display: flex;
+			    padding: 0;
+			    margin: 36px 0 0;
+			    list-style: none;
+			    justify-content: left;
+			    gap: 24px;
+			}
+
+			.footer__list a{
+				font-size: 10px;
+				line-height: 9px;
+				color: #494746;
+			}
+		</style>
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0"> 
+    		<tbody>
+    			<tr> 
+    				<td align="center">
+						<table width="600" border="0" cellspacing="0" cellpadding="0"> 
+							<tbody>
+								<tr class="header">
+									<td class="header__col" valign="center" width="50%">
+										<a href="#"><img src="logo.svg" alt=""></a>
+									</td>
+									<td class="header__col" valign="center" width="50%">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td align="right" valign="center">
+														<p class="client">Басков Николай Валентинович</p>
+														<p class="bill">На счете: <span>23 000 <small>₽</small></span></p>
+													</td>
+													<td align="right" valign="center">
+														<img src="account.svg" alt="">
+													</td>
+												</tr>
+												<tr>
+													<td align="right" valign="center">
+														<a class="account-link" href="#">Войти</a>
+													</td>
+													<td align="right" valign="center">
+														<a class="account-link" href="#"><img src="logout.svg" alt=""></a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr> 
+								<tr class="subheader">
+									<td valign="top" width="100%" colspan="2">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td class="title" align="center"><h1>Встречай сезон в полном расцвете сил!</h1></td>
+												</tr>
+												<tr>
+													<td class="sub-title" align="center">только для Клуба Любимых Туристов</td>
+												</tr>
+												<tr>
+													<td>
+														<table width="100%" border="0" cellspacing="0" cellpadding="0">
+															<tr>
+																<td>
+																	<ul class="subheader__list">
+																		<li>Наличие мест</li>
+																		<li><img src="blue-circle.svg" alt=""></li>
+																		<li>Раннее бронирование 2023</li>
+																		<li><img src="blue-circle.svg" alt=""></li>
+																		<li>CashBack до 5%</li>
+																	</ul>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr class="offer">
+									<td colspan="2">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td class="offer__img"><a href="#"><img src="1.svg" alt=""></a></td>
+												</tr>
+												<tr>
+													<td class="offer__title"><a href="#">Санатории на море с лучшим лечением</a></td>
+												</tr>
+												<tr>
+													<td class="offer__text">
+														<p>Вы сможете укрепить здоровье, пройти курс реабилитации или восстановить силы после напряженной работы</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="offer__link"><a href="#"><img src="link.svg" alt=""></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr class="offer">
+									<td colspan="2">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td class="offer__img"><a href="#"><img src="2.svg" alt=""></a></td>
+												</tr>
+												<tr>
+													<td class="offer__title"><a href="#">Лучшие термальные здравницы</a></td>
+												</tr>
+												<tr>
+													<td class="offer__text">
+														<p>Целебные свойства термальных источников прекрасно расслабляют и насыщают организм силой самой природы</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="offer__link"><a href="#"><img src="link.svg" alt=""></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr class="offer">
+									<td colspan="2">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td class="offer__img"><a href="#"><img src="3.svg" alt=""></a></td>
+												</tr>
+												<tr>
+													<td class="offer__title"><a href="#">Лечение органов дыхания в Сочи</a></td>
+												</tr>
+												<tr>
+													<td class="offer__text">
+														<p>Совместите отдых в экологически чистом регионе с лечением органов дыхания</p>
+													</td>
+												</tr>
+												<tr>
+													<td class="offer__link"><a href="#"><img src="link.svg" alt=""></a></td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr class="supfooter">
+									<td colspan="2" align="center">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td align="left"><a href="#"><img src="b-btn-1.svg" alt=""></a></td>
+													<td align="center"><a href="#"><img src="b-btn-2.svg" alt=""></a></td>
+													<td align="right"><a href="#"><img src="b-btn-3.svg" alt=""></a></td>
+												</tr>
+												<tr>
+													<td class="subfooter__information" colspan="3" align="center">
+														СЛЕДИТЕ ЗА <b>АКЦИЯМИ И СПЕЦИАЛЬНЫМИ ПРЕДЛОЖЕНИЯМИ</b><br> В НАШИХ СОЦИАЛЬНЫХ СЕТЯХ
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr class="footer">
+									<td class="footer__col" colspan="2">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td valign="top" align="left" width="33.3333%">
+														<a href="#"><img src="logo.svg" alt=""></a>
+													</td>
+													<td align="center" valign="center">
+														<ul class="social-list">
+															<li><a href="#"><img src="facebook.svg" alt=""></a></li>
+															<li><a href="#"><img src="instagram.svg" alt=""></a></li>
+															<li><a href="#"><img src="vkontakte.svg" alt=""></a></li>
+															<li><a href="#"><img src="odnoklassniki.svg" alt=""></a></li>
+														</ul>
+													</td>
+													<td class="footer__links" align="right" valign="center">
+														<a href="#">tour-shop.club</a><br>
+														<a href="#">8 800 700 80 54</a>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="3">
+														<ul class="footer__list">
+															<li><a href="#">Правила</a></li>
+															<li><a href="#">Пожаловаться на спам</a></li>
+															<li><a href="#">Отписаться от рассылки</a></li>
+															<li><a href="#">Веб-версия письма</a></li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+         			</td> 
+         		</tr> 
+         	</tbody>
+         </table>
+	</body>
+</html>
+
